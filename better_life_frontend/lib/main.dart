@@ -1,11 +1,7 @@
-// import 'dart:js';
-
 import 'package:better_life_frontend/Screens/Evidence/processed_food.dart';
 import 'package:better_life_frontend/Screens/Evidence/processed_food2.dart';
 import 'package:better_life_frontend/Screens/Home/home_screen.dart';
 import 'package:better_life_frontend/Screens/Question/finish_question.dart';
-// import 'package:better_life_frontend/Screens/Question/question3.dart';
-import 'package:better_life_frontend/Screens/Home/try_http.dart';
 import 'package:better_life_frontend/Screens/Home/example.dart';
 import 'package:better_life_frontend/Screens/Question/sleep_question.dart';
 import 'package:better_life_frontend/Screens/SignUp/signup.dart';
