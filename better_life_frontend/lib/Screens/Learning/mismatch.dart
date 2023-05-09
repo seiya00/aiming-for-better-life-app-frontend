@@ -71,7 +71,11 @@ class _MismatchState extends State<Mismatch> {
                 const SizedBox(
                   height: 15,
                 ),
-                _buildCard('運動のミスマッチ')
+                _buildCard('運動のミスマッチ'),
+                const SizedBox(
+                  height: 15,
+                ),
+                _buildCard('構造のミスマッチ'),
               ],
             ),
           ),
