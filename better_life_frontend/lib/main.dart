@@ -16,33 +16,6 @@ import 'dart:convert';
 
 import 'package:provider/provider.dart';
 
-
-// Future<void> getData() async {
-//   var uri = Uri.parse('http://127.0.0.1:8000/api/user/token/');
-//   var response = await http.post(uri, body: {
-//     'email': 'test@example.com',
-//     'password': 'Testpass123'
-//   });
-//   if (response.statusCode == 200) {
-//     print('successed');
-//   } else {
-//     throw Exception('Failed to get token');
-//   }
-//   var data = jsonDecode(response.body);
-//   String token = data['token'];
-//   uri = Uri.parse('http://127.0.0.1:8000/api/meal/questions/');
-//   response = await http.get(uri, headers: {
-//     'Authorization': 'Token $token'
-//   });
-//   if (response.statusCode == 200) {
-//     var data = utf8.decode(response.bodyBytes);
-//     // When displaying Japanese in console, you should use utf8.decode(sth.bodyBytes) than jsonDecoder(sth.body)
-//     print(data);
-//   } else {
-//     throw Exception('Failed to load data');
-//   }
-// }
-
 void main() {
   runApp(
     ChangeNotifierProvider(
