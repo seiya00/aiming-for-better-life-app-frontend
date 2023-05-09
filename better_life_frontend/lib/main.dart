@@ -1,5 +1,6 @@
 import 'package:better_life_frontend/Screens/Evidence/processed_food.dart';
 import 'package:better_life_frontend/Screens/Evidence/processed_food2.dart';
+import 'package:better_life_frontend/Screens/Evidence/good_foods.dart';
 import 'package:better_life_frontend/Screens/Home/home_screen.dart';
 import 'package:better_life_frontend/Screens/Question/finish_question.dart';
 import 'package:better_life_frontend/Screens/Home/example.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       // home: IsNightShift(),
-      home: ProcessedFoodVersionTwo(),
+      home: GoodFoods(),
     );
   }
 }

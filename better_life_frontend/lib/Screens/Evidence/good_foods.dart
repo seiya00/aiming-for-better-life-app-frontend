@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ProcessedFoodVersionTwo extends StatefulWidget {
-  const ProcessedFoodVersionTwo({super.key});
+class GoodFoods extends StatefulWidget {
+  const GoodFoods({super.key});
 
   @override
-  State<ProcessedFoodVersionTwo> createState() =>
-      _ProcessedFoodVersionTwoState();
+  State<GoodFoods> createState() => _GoodFoodsState();
 }
 
-class _ProcessedFoodVersionTwoState extends State<ProcessedFoodVersionTwo> {
+class _GoodFoodsState extends State<GoodFoods> {
   Widget _buildCard(String enterText) {
     return SizedBox(
       width: MediaQuery.of(context).size.width - 30,
@@ -28,9 +27,9 @@ class _ProcessedFoodVersionTwoState extends State<ProcessedFoodVersionTwo> {
                   child: Text(
                     enterText,
                     style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.red),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 )
               ],
@@ -44,10 +43,10 @@ class _ProcessedFoodVersionTwoState extends State<ProcessedFoodVersionTwo> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          '超加工食品の危険性について',
+          '何を食べればいいの？',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.green,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -60,14 +59,15 @@ class _ProcessedFoodVersionTwoState extends State<ProcessedFoodVersionTwo> {
                 const SizedBox(
                   height: 20,
                 ),
-                _buildCard('超加工食品の中毒性について'),
+                _buildCard('野菜'),
                 const SizedBox(
                   height: 15,
                 ),
-                _buildCard('超加工食品が体や脳に与えるダメージについて'),
+                _buildCard('肉'),
                 const SizedBox(
                   height: 15,
                 ),
+                _buildCard('魚介類')
               ],
             ),
           ),
