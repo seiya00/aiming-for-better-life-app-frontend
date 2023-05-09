@@ -43,7 +43,7 @@ class _GoodFoodsState extends State<GoodFoods> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          '何を食べればいいの？',
+          '科学的に証明された食べ物',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.green,
